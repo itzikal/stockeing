@@ -45,13 +45,13 @@ Add `ScanHit`, `Decision`, and `Position`, with the spec's validation rules.
 Add `MarketView` and the `Strategy` base class, plus an in-memory fixture view and a valid fixture strategy that later tasks and `strategy-kit check` run against.
 
 **Acceptance criteria:**
-- [ ] A subclass missing `scan` or `evaluate` can't be instantiated
-- [ ] The fixture view never returns bars after its `as_of` time
-- [ ] The fixture strategy returns valid hits and decisions from the fixture view
+- [x] A subclass missing `scan` or `evaluate` can't be instantiated
+- [x] The fixture view never returns bars after its `as_of` time
+- [x] The fixture strategy returns valid hits and decisions from the fixture view
 
 **Verification:**
-- [ ] `uv run pytest packages/strategy-kit -k contract` passes
-- [ ] `uv run mypy packages/strategy-kit` passes on the fixture strategy
+- [x] `uv run pytest packages/strategy-kit -k contract` passes
+- [x] `uv run mypy packages/strategy-kit` passes on the fixture strategy
 
 **Dependencies:** Task 2
 
@@ -61,7 +61,7 @@ Add `MarketView` and the `Strategy` base class, plus an in-memory fixture view a
 
 ## Checkpoint: Foundation
 
-- [ ] Tests, ruff, and mypy pass
+- [x] Tests, ruff, and mypy pass
 
 ## Phase 2: Discovery and check
 

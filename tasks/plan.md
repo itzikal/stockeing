@@ -25,12 +25,12 @@ Workspace → Decision models → Strategy contract and fixtures → Discovery �
 Details and acceptance criteria are in `tasks/todo.md`.
 
 ### Phase 1: Foundation
-- [ ] Task 1: Set up the workspace and tooling
-- [ ] Task 2: Add decision models with validation
-- [ ] Task 3: Add the strategy contract and test fixtures
+- [x] Task 1: Set up the workspace and tooling
+- [x] Task 2: Add decision models with validation
+- [x] Task 3: Add the strategy contract and test fixtures
 
 ### Checkpoint: Foundation
-- [ ] Tests, ruff, and mypy pass
+- [x] Tests, ruff, and mypy pass
 
 ### Phase 2: Discovery and check
 - [ ] Task 4: Discover strategies

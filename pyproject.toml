@@ -23,3 +23,7 @@ target-version = "py313"
 [tool.mypy]
 strict = true
 python_version = "3.13"
+
+[[tool.mypy.overrides]]
+module = ["pandas", "pandas.*"]
+ignore_missing_imports = true
