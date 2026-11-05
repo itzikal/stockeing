@@ -60,7 +60,28 @@ class Breakout20D(Strategy):
 3. **Stay deterministic.** Do not read the clock (`datetime.now`, `time.time`). Do not use unseeded randomness. The same inputs must always give the same decisions.
 4. **Put every adjustable value in `Params`.** Each field needs bounds (`ge`, `le`) and a `description`. Do not hard-code numbers that a user might want to tune.
 5. **Change `version` when the rules change.** Old test results must stay traceable to the rules that produced them.
-6. **Write tests.** Put them in `test_strategy.py` in the strategy folder. Test at least one case where it enters, one where it holds, and one where it exits.
+6. **Write tests.** Put them in `test_strategy.py` in the strategy folder. Test at least one case where it enters, one where it holds, and one where it exits. Use this pattern to get the strategy in a test:
+
+   ```python
+   from pathlib import Path
+
+   from strategy_kit.discovery import StrategyInfo, list_strategies
+   from strategy_kit.fixtures import fixture_view
+
+
+   def load() -> StrategyInfo:
+       found = list_strategies(Path(__file__).parent.parent).strategies
+       return next(s for s in found if s.id == "breakout-20d")
+
+
+   def test_enters_on_breakout() -> None:
+       info = load()
+       params = info.cls.Params(lookback=20)
+       decision = info.cls().evaluate(fixture_view(), "RISE", None, params)
+       assert decision.action == "enter"
+   ```
+
+   Use `fixture_view()` for data. Its symbols are `RISE` (closes above its prior high on the last bar) and `FLAT` (never breaks out).
 7. **Pass the checks** before calling the strategy done.
 
 ## Steps
@@ -79,7 +100,7 @@ class Breakout20D(Strategy):
    ```
 
    `strategy-kit check` runs the strategy twice on fixture data. It fails if the strategy does not load, returns an invalid decision, raises, or gives different results on the two runs.
-5. If a check fails, fix the strategy and rerun. Do not weaken the rules or tests to get a pass.
+5. If a check fails, fix the strategy and rerun. `uv run ruff check strategies/<strategy-id> --fix` sorts imports and fixes simple lint problems. Do not weaken the rules or tests to get a pass.
 
 ## Limits of the checks
 

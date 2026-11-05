@@ -145,6 +145,8 @@ Write `docs/strategy-rules.md`, and update `CLAUDE.md` with the real commands an
 
 ### Task 8: Trial the rules with a fresh agent
 
+PARTIAL: run by Claude in this session, not a fresh agent. Repeat it in a new session with only the repo before ticking this task and criterion 6.
+
 Give a fresh agent a plain-language strategy description and only the repo. Fix any gaps it hits in the rules, then delete the trial strategy, since real strategies come after `research`.
 
 **Acceptance criteria:**
