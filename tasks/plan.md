@@ -34,7 +34,7 @@ Details and acceptance criteria are in `tasks/todo.md`.
 
 ### Phase 2: Discovery and check
 - [x] Task 4: Discover strategies
-- [ ] Task 5: Add the `list` command
+- [x] Task 5: Add the `list` command
 - [ ] Task 6: Add the `check` command
 
 ### Checkpoint: Discovery and check

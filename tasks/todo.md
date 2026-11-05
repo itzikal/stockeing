@@ -88,12 +88,12 @@ Add `list_strategies()`, which loads each `strategies/<id>/strategy.py` by file 
 Add `uv run strategy-kit list`, which prints each strategy and any load errors.
 
 **Acceptance criteria:**
-- [ ] A new `strategies/<id>/` folder appears with no changes outside that folder (success criterion 1)
-- [ ] The command exits non-zero if any strategy failed to load
+- [x] A new `strategies/<id>/` folder appears with no changes outside that folder (success criterion 1)
+- [x] The command exits non-zero if any strategy failed to load
 
 **Verification:**
-- [ ] `uv run pytest packages/strategy-kit -k cli` passes
-- [ ] Manual check: `uv run strategy-kit list` shows a temporary strategy folder, and stops showing it once removed
+- [x] `uv run pytest packages/strategy-kit -k cli` passes
+- [x] Manual check: `uv run strategy-kit list` shows a temporary strategy folder, and stops showing it once removed
 
 **Dependencies:** Task 4
 
