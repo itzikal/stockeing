@@ -106,12 +106,12 @@ Add `uv run strategy-kit list`, which prints each strategy and any load errors.
 Add `uv run strategy-kit check <strategy-id>`, which runs a strategy twice against fixture data.
 
 **Acceptance criteria:**
-- [ ] A valid strategy passes (success criterion 5)
-- [ ] A strategy using unseeded randomness fails, and the message says the runs differed (success criterion 5)
-- [ ] A strategy that fails to load or returns an invalid decision fails, with the reason
+- [x] A valid strategy passes (success criterion 5)
+- [x] A strategy using unseeded randomness fails, and the message says the runs differed (success criterion 5)
+- [x] A strategy that fails to load or returns an invalid decision fails, with the reason
 
 **Verification:**
-- [ ] `uv run pytest packages/strategy-kit -k check` passes
+- [x] `uv run pytest packages/strategy-kit -k check` passes
 
 **Dependencies:** Task 5
 
@@ -121,8 +121,8 @@ Add `uv run strategy-kit check <strategy-id>`, which runs a strategy twice again
 
 ## Checkpoint: Discovery and check
 
-- [ ] Success criteria 1 to 5 from the spec pass
-- [ ] Tests, ruff, and mypy pass
+- [x] Success criteria 1 to 5 from the spec pass
+- [x] Tests, ruff, and mypy pass
 
 ## Phase 3: Strategy authoring
 

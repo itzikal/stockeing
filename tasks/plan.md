@@ -35,10 +35,10 @@ Details and acceptance criteria are in `tasks/todo.md`.
 ### Phase 2: Discovery and check
 - [x] Task 4: Discover strategies
 - [x] Task 5: Add the `list` command
-- [ ] Task 6: Add the `check` command
+- [x] Task 6: Add the `check` command
 
 ### Checkpoint: Discovery and check
-- [ ] Success criteria 1 to 5 from the spec pass
+- [x] Success criteria 1 to 5 from the spec pass
 
 ### Phase 3: Strategy authoring
 - [ ] Task 7: Write the strategy rules

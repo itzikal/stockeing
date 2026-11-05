@@ -44,3 +44,15 @@ def test_new_strategy_folder_appears_then_disappears(
     shutil.rmtree(folder)
     assert main(["list", "--dir", str(tmp_path)]) == 0
     assert "valid-one" not in capsys.readouterr().out
+
+
+def test_cli_check_passes_valid_strategy(capsys: pytest.CaptureFixture[str]) -> None:
+    assert main(["check", "valid-one", "--dir", str(FIXTURES)]) == 0
+    assert "PASS valid-one" in capsys.readouterr().out
+
+
+def test_cli_check_fails_unknown_strategy_with_nonzero_exit(
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    assert main(["check", "nope", "--dir", str(FIXTURES)]) == 1
+    assert "FAIL nope" in capsys.readouterr().out
