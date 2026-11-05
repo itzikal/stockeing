@@ -27,12 +27,12 @@ Create the root `uv` workspace and an empty `strategy-kit` package, with pytest,
 Add `ScanHit`, `Decision`, and `Position`, with the spec's validation rules.
 
 **Acceptance criteria:**
-- [ ] `enter` without a side, entry, stop, or target is rejected
-- [ ] Prices in the wrong order are rejected for long and for short (success criterion 4)
-- [ ] An empty `reason` is rejected for every action
+- [x] `enter` without a side, entry, stop, or target is rejected
+- [x] Prices in the wrong order are rejected for long and for short (success criterion 4)
+- [x] An empty `reason` is rejected for every action
 
 **Verification:**
-- [ ] `uv run pytest packages/strategy-kit -k models` passes
+- [x] `uv run pytest packages/strategy-kit -k models` passes
 
 **Dependencies:** Task 1
 
