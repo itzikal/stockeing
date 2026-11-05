@@ -70,12 +70,12 @@ Add `MarketView` and the `Strategy` base class, plus an in-memory fixture view a
 Add `list_strategies()`, which loads each `strategies/<id>/strategy.py` by file path and returns its metadata and parameter JSON Schema, plus any load errors.
 
 **Acceptance criteria:**
-- [ ] A valid strategy is returned with a valid JSON Schema (success criterion 2)
-- [ ] A broken file, two classes in one file, or an id that doesn't match its folder is reported as an error, and the others still load (success criterion 3)
-- [ ] Two strategies with a `test_strategy.py` both run under pytest
+- [x] A valid strategy is returned with a valid JSON Schema (success criterion 2)
+- [x] A broken file, two classes in one file, or an id that doesn't match its folder is reported as an error, and the others still load (success criterion 3)
+- [x] Two strategies with a `test_strategy.py` both run under pytest
 
 **Verification:**
-- [ ] `uv run pytest packages/strategy-kit -k discovery` passes
+- [x] `uv run pytest packages/strategy-kit -k discovery` passes
 
 **Dependencies:** Task 3
 

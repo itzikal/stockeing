@@ -33,7 +33,7 @@ Details and acceptance criteria are in `tasks/todo.md`.
 - [x] Tests, ruff, and mypy pass
 
 ### Phase 2: Discovery and check
-- [ ] Task 4: Discover strategies
+- [x] Task 4: Discover strategies
 - [ ] Task 5: Add the `list` command
 - [ ] Task 6: Add the `check` command
 

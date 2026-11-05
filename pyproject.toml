@@ -23,6 +23,7 @@ target-version = "py313"
 [tool.mypy]
 strict = true
 python_version = "3.13"
+exclude = ["tests/strategy_fixtures/"]
 
 [[tool.mypy.overrides]]
 module = ["pandas", "pandas.*"]
