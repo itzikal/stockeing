@@ -9,12 +9,12 @@ Spec: `SPEC-strategy-kit.md`. Plan: `tasks/plan.md`.
 Create the root `uv` workspace and an empty `strategy-kit` package, with pytest, ruff, and mypy configured. Add a `.gitignore` covering `.vs/`, `graphify-out/`, and Python build and cache files.
 
 **Acceptance criteria:**
-- [ ] `uv sync` installs the workspace on Python 3.13
-- [ ] `.vs/` no longer shows in `git status`
+- [x] `uv sync` installs the workspace on Python 3.13
+- [x] `.vs/` no longer shows in `git status`
 
 **Verification:**
-- [ ] `uv run pytest packages/strategy-kit` passes with one smoke test
-- [ ] `uv run ruff check .` and `uv run mypy packages/strategy-kit` pass
+- [x] `uv run pytest packages/strategy-kit` passes with one smoke test
+- [x] `uv run ruff check .` and `uv run mypy packages/strategy-kit` pass
 
 **Dependencies:** None
 

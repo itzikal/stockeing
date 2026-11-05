@@ -1,0 +1,16 @@
+# Visual Studio cache
+.vs/
+
+# Knowledge graph output
+graphify-out/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

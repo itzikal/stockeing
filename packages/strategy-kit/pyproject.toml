@@ -1,0 +1,12 @@
+[project]
+name = "strategy-kit"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = ["pydantic>=2", "pandas>=2"]
+
+[project.scripts]
+strategy-kit = "strategy_kit.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
