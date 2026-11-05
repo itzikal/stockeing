@@ -131,11 +131,11 @@ Add `uv run strategy-kit check <strategy-id>`, which runs a strategy twice again
 Write `docs/strategy-rules.md`, and update `CLAUDE.md` with the real commands and a pointer to the rules.
 
 **Acceptance criteria:**
-- [ ] The doc covers the folder layout, the contract, every rule in the spec, and the steps to finish a strategy
-- [ ] Every command in `CLAUDE.md` has been run and works
+- [x] The doc covers the folder layout, the contract, every rule in the spec, and the steps to finish a strategy
+- [x] Every command in `CLAUDE.md` has been run and works
 
 **Verification:**
-- [ ] Manual check: run each documented command
+- [x] Manual check: run each documented command
 
 **Dependencies:** Task 6
 

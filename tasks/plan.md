@@ -41,7 +41,7 @@ Details and acceptance criteria are in `tasks/todo.md`.
 - [x] Success criteria 1 to 5 from the spec pass
 
 ### Phase 3: Strategy authoring
-- [ ] Task 7: Write the strategy rules
+- [x] Task 7: Write the strategy rules
 - [ ] Task 8: Trial the rules with a fresh agent
 
 ### Checkpoint: Complete
